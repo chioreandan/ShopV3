@@ -60,6 +60,7 @@ namespace GlobalShop
 
         private void Magazin_Load(object sender, EventArgs e)
         {
+            //panel5.Visible = false;
             produses = ProduseController.GetProduse().ToList();
             foreach (Produse p in produses)
                 comboBox2.Items.Add(p.NumeProdus);
@@ -173,6 +174,7 @@ namespace GlobalShop
                     break;
 
             }
+            panel5.Visible = false;
             panel4.Visible = true;
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
@@ -200,8 +202,21 @@ namespace GlobalShop
         private void button19_Click(object sender, EventArgs e)
         {
             panel4.Visible = false;
+            panel5.Visible = false;
             panel2.Visible = true;
         }
-       
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = true;
+            panel2.Visible = false;
+            panel4.Visible = false;
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = false;
+            panel2.Visible = true;
+        }
     }
 }
