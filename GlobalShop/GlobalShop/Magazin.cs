@@ -81,11 +81,11 @@ namespace GlobalShop
             List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
             List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
             List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
+            List<Button> buttons = new List<Button> {button11, button12, button12, button13, button14, button15, button16, button17, button18 };
             
             produses = RandomProducts.RandomProduse();
             for (int i = 0; i < 8; i++)
             {
-                //smallLabels[i].Text = produses[i].NumeProdus;
                 smallLabels[i].Text = null;
                 string produ = produses[i].NumeProdus.ToString();
                 string[] vs = produ.Split(' ');
@@ -103,7 +103,46 @@ namespace GlobalShop
             }
 
         }
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Produse> produses = new List<Produse>();
+            produses = CategorieController.getProduse("Laptopuri");
+            List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
+            List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
+            List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
+
+            for (int i = 0; i < 8; i++)
+            {
+                if(i< produses.Capacity)
+                {
+                    smallLabels[i].Text = null;
+                    string produ = produses[i].NumeProdus.ToString();
+                    string[] vs = produ.Split(' ');
+                    for (int j = 0; j < vs.Length; j++)
+                    {
+                        smallLabels[i].Text += vs[j] + " ";
+                        if (j == 4)
+                        {
+                            smallLabels[i].Text += "\n";
+                        }
+
+                    }
+                    bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
+
+                }
+                else if (i >= produses.Capacity)
+                {
+                    smallLabels[i].Hide();
+                    bigLabels[i].Hide();
+                    pictures[i].Hide();
+                }
+                
+
+            }
+
+
+        }
+
 
         private void button11_Click(object sender, EventArgs e)
         {
@@ -111,7 +150,7 @@ namespace GlobalShop
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
             label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             label24.Text = produses[0].NumeProdus;
             pret.Text = produses[0].Pret.ToString()+" Lei";
@@ -143,7 +182,7 @@ namespace GlobalShop
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
             label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             label24.Text = produses[1].NumeProdus;
             pret.Text = produses[1].Pret.ToString() + " Lei";
@@ -170,7 +209,7 @@ namespace GlobalShop
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
             label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             label24.Text = produses[i].NumeProdus;
             pret.Text = produses[i].Pret.ToString() + " Lei";
@@ -194,11 +233,7 @@ namespace GlobalShop
         {
 
         }
-        
 
        
-
-        
-
     }
 }

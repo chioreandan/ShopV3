@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Controllers\ConfirmationMail.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Products\CategorieController.cs" />
     <Compile Include="Controllers\Products\CautareProduse.cs" />
     <Compile Include="Controllers\Products\CheckStoc.cs" />
     <Compile Include="Controllers\Products\ProduseController.cs" />
