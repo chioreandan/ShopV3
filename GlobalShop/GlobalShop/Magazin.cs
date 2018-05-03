@@ -21,32 +21,54 @@ namespace GlobalShop
         {
             InitializeComponent();
             this.user = user;
+           
         }
         public Magazin()
         {
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            List<Produse> produse = new List<Produse>();
+            produse = ProduseController.GetProduse().ToList();
+            foreach (Produse p in produse)
+            {
+                comboBox2.Items.Add(p.NumeProdus);
+
+            }
+            this.comboBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            this.comboBox2.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+
+
 
 
         }
 
         private void Magazin_Load(object sender, EventArgs e)
         {
+            List<Produse> produse = new List<Produse>();
+            produse = ProduseController.GetProduse().ToList();
+            foreach (Produse p in produse)
+            {
+                comboBox2.Items.Add(p.NumeProdus);
+
+            }
+            this.comboBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            this.comboBox2.AutoCompleteSource = AutoCompleteSource.ListItems;
             this.MinimumSize = new System.Drawing.Size(this.Width, this.Height);
 
             this.MaximumSize = new System.Drawing.Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
@@ -63,7 +85,19 @@ namespace GlobalShop
             produses = RandomProducts.RandomProduse();
             for (int i = 0; i < 8; i++)
             {
-                smallLabels[i].Text = produses[i].NumeProdus;
+                //smallLabels[i].Text = produses[i].NumeProdus;
+                smallLabels[i].Text = null;
+                string produ = produses[i].NumeProdus.ToString();
+                string[] vs = produ.Split(' ');
+                for(int j=0;j< vs.Length; j++)
+                {
+                    smallLabels[i].Text += vs[j]+" ";
+                    if (j == 4)
+                    {
+                        smallLabels[i].Text += "\n";
+                    }
+
+                }
                 bigLabels[i].Text = produses[i].Pret.ToString()+" Lei";
 
             }
@@ -103,7 +137,7 @@ namespace GlobalShop
             panel2.Visible = true;
         }
 
-        /*private void button12_Click(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)
         {
             panel4.Visible = true;
             panel2.Visible = false;
@@ -127,7 +161,7 @@ namespace GlobalShop
             }
             label21.Text = produses[1].Caracteristici;
 
-        }*/
+        }
         private void buttonHandler(object sender, EventArgs e,int i)
         {
             
@@ -160,25 +194,11 @@ namespace GlobalShop
         {
 
         }
+        
 
-        private void comboBox2_TextUpdate(object sender, EventArgs e)
-        {
-            for(int i = 0; i < comboBox2.Items.Count; i++)
-            {
-                comboBox2.Items.RemoveAt(i);
-            }
-            List<Produse> produses = new List<Produse>();
-            produses = CautareProduse.searchP(comboBox2.Text);
-            comboBox2.DroppedDown = true;
-            foreach(Produse p in produses)
-            {
-                comboBox2.Items.Add(p.NumeProdus);
-            }
-        }
+       
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
-        }
     }
 }

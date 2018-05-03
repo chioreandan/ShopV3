@@ -98,7 +98,7 @@
             this.label4.Size = new System.Drawing.Size(180, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nu ai cont? Nu-ti face griji!";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label5
             // 
@@ -110,6 +110,7 @@
             this.label5.Size = new System.Drawing.Size(201, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Poti crea unul in pasul urmator.";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // Form1
             // 

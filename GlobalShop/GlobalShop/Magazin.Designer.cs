@@ -46,6 +46,7 @@ namespace GlobalShop
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -82,7 +83,6 @@ namespace GlobalShop
             this.button10 = new System.Windows.Forms.Button();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -94,7 +94,6 @@ namespace GlobalShop
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -307,6 +306,19 @@ namespace GlobalShop
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1051, 551);
             this.panel2.TabIndex = 2;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox2.DropDownHeight = 500;
+            this.comboBox2.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.Location = new System.Drawing.Point(41, 45);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(555, 37);
+            this.comboBox2.TabIndex = 48;
             // 
             // label20
             // 
@@ -593,6 +605,7 @@ namespace GlobalShop
             this.button11.TabIndex = 13;
             this.button11.Text = "Vezi detalii";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label3
             // 
@@ -679,14 +692,6 @@ namespace GlobalShop
             this.label1.Size = new System.Drawing.Size(155, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cauta produsul dorit";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(307, 727);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(556, 41);
-            this.textBox1.TabIndex = 0;
             // 
             // panel4
             // 
@@ -812,20 +817,6 @@ namespace GlobalShop
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownHeight = 500;
-            this.comboBox2.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.Location = new System.Drawing.Point(38, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(555, 37);
-            this.comboBox2.TabIndex = 48;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            this.comboBox2.TextUpdate += new System.EventHandler(this.comboBox2_TextUpdate);
-            this.comboBox2.Click += new System.EventHandler(this.comboBox2_TextUpdate);
-            // 
             // Magazin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -834,7 +825,6 @@ namespace GlobalShop
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel4);
             this.Font = new System.Drawing.Font("Champagne & Limousines", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -860,7 +850,6 @@ namespace GlobalShop
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -871,7 +860,6 @@ namespace GlobalShop
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

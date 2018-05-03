@@ -8,10 +8,10 @@ namespace GlobalShop.Controllers.Products
 {
     internal class CautareProduse
     {
-        internal static List<Produse> searchP(string s)
+        internal static List<string> searchP(string s)
         {
             List<Produse> produse = new List<Produse>();
-            List<Produse> searched = new List<Produse>();
+            List<string> searched = new List<string>();
             produse = ProduseController.GetProduse().ToList();
             foreach(Produse p in produse)
             {
@@ -26,11 +26,32 @@ namespace GlobalShop.Controllers.Products
                 }
                 if (ok == 0)
                 {
-                    searched.Add(p);
+                    searched.Add(p.NumeProdus);
                 }
             }
 
             return searched;
         }
+        /*internal static string[] SuggestStrings(string s)
+        {
+            string[] suggest;
+            List<Produse> produse = new List<Produse>();
+            produse = ProduseController.GetProduse().ToList();
+            foreach(Produse p in produse)
+            {
+                int ok = 0;
+                for(int i = 0; i <= s.Length; i++)
+                {
+                    if (p.NumeProdus[i] != s[i])
+                    {
+                        ok = 1;
+                    }
+                }
+                if (ok == 0)
+                {
+                    
+                }
+            }
+        }*/
     }
 }

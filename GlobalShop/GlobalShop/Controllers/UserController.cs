@@ -14,7 +14,7 @@ namespace GlobalShop.Controllers
 
         public static User GetUser(string email)
         {
-            return shop.Users.SingleOrDefault(u => u.Email == email);
+            return shop.Users.FirstOrDefault(u => u.Email == email);
         }
         public static void Create(User user)
         {
