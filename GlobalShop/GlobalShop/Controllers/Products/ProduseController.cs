@@ -26,7 +26,7 @@ namespace GlobalShop.Controllers.Products
         public static List<Produse> getByCategory()
         {
             List<Produse> produse = new List<Produse>();
-            produse=shop.Produses.Where(s => s.CategoriiProduse.CategorieId == 1).ToList();
+            produse=shop.Produses.Where(s => s.CategoriiProduse.CategorieId == s.CategorieId).ToList();
             return produse;
         }
     }

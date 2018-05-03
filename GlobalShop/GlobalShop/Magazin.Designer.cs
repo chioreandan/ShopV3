@@ -46,7 +46,6 @@ namespace GlobalShop
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@ namespace GlobalShop
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
@@ -139,8 +139,9 @@ namespace GlobalShop
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(241, 33);
             this.button7.TabIndex = 9;
-            this.button7.Text = "Auto si Moto";
+            this.button7.Text = "Auto & Moto";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button1_Click);
             // 
             // button8
             // 
@@ -155,6 +156,7 @@ namespace GlobalShop
             this.button8.TabIndex = 8;
             this.button8.Text = "Carti";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
             // button9
             // 
@@ -169,6 +171,7 @@ namespace GlobalShop
             this.button9.TabIndex = 7;
             this.button9.Text = "Haine";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -183,6 +186,7 @@ namespace GlobalShop
             this.button4.TabIndex = 6;
             this.button4.Text = "Gaming";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -195,8 +199,9 @@ namespace GlobalShop
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(241, 33);
             this.button5.TabIndex = 5;
-            this.button5.Text = "TV si Audio-Video";
+            this.button5.Text = "TV, Audio-Video & Foto";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -209,8 +214,9 @@ namespace GlobalShop
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(241, 33);
             this.button6.TabIndex = 4;
-            this.button6.Text = "PC si Periferice";
+            this.button6.Text = "PC & Periferice";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -225,6 +231,7 @@ namespace GlobalShop
             this.button3.TabIndex = 3;
             this.button3.Text = "Telefoane";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -239,6 +246,7 @@ namespace GlobalShop
             this.button2.TabIndex = 2;
             this.button2.Text = "Tablete";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -307,19 +315,6 @@ namespace GlobalShop
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1051, 551);
             this.panel2.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox2.DropDownHeight = 500;
-            this.comboBox2.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.Location = new System.Drawing.Point(41, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(555, 37);
-            this.comboBox2.TabIndex = 48;
             // 
             // label20
             // 
@@ -649,6 +644,19 @@ namespace GlobalShop
             this.pictureBox1.Size = new System.Drawing.Size(151, 155);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox2.DropDownHeight = 500;
+            this.comboBox2.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.Location = new System.Drawing.Point(41, 45);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(555, 37);
+            this.comboBox2.TabIndex = 48;
             // 
             // panel3
             // 

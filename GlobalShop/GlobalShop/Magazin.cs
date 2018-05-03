@@ -17,11 +17,14 @@ namespace GlobalShop
     {
         User user;
         public static List<Produse> produses;
+        Button button = new Button();
+        //button.Click += new EventHandler(button_Click);
+
         public Magazin(User user)
         {
             InitializeComponent();
             this.user = user;
-           
+
         }
         public Magazin()
         {
@@ -60,9 +63,9 @@ namespace GlobalShop
 
         private void Magazin_Load(object sender, EventArgs e)
         {
-            List<Produse> produse = new List<Produse>();
-            produse = ProduseController.GetProduse().ToList();
-            foreach (Produse p in produse)
+           // List<Produse> produse = new List<Produse>();
+            produses = ProduseController.GetProduse().ToList();
+            foreach (Produse p in produses)
             {
                 comboBox2.Items.Add(p.NumeProdus);
 
@@ -81,63 +84,61 @@ namespace GlobalShop
             List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
             List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
             List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
-            List<Button> buttons = new List<Button> {button11, button12, button12, button13, button14, button15, button16, button17, button18 };
-            
+            List<Button> buttons = new List<Button> { button11, button12, button12, button13, button14, button15, button16, button17, button18 };
+
             produses = RandomProducts.RandomProduse();
             for (int i = 0; i < 8; i++)
             {
                 smallLabels[i].Text = null;
                 string produ = produses[i].NumeProdus.ToString();
                 string[] vs = produ.Split(' ');
-                for(int j=0;j< vs.Length; j++)
+                for (int j = 0; j < vs.Length; j++)
                 {
-                    smallLabels[i].Text += vs[j]+" ";
-                    if (j == 4)
+                    smallLabels[i].Text += vs[j] + " ";
+                    if (j % 3 == 0 && j != 0)
                     {
                         smallLabels[i].Text += "\n";
                     }
 
                 }
-                bigLabels[i].Text = produses[i].Pret.ToString()+" Lei";
+                bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
 
             }
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Produse> produses = new List<Produse>();
-            produses = CategorieController.getProduse("Laptopuri");
+            Button button = sender as Button;
+            //List<Produse> produses = new List<Produse>();
+            produses = CategorieController.getProduse(button.Text.ToString());
             List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
             List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
             List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
-
-            for (int i = 0; i < 8; i++)
+            List<Button> buttons = new List<Button> { button11, button12, button13, button14, button15, button16, button17, button18 };
+            
+            for (int i = 0; i < produses.Capacity; i++)
             {
-                if(i< produses.Capacity)
+
+                smallLabels[i].Text = null;
+                string produ = produses[i].NumeProdus.ToString();
+                string[] vs = produ.Split(' ');
+                for (int j = 0; j < vs.Length; j++)
                 {
-                    smallLabels[i].Text = null;
-                    string produ = produses[i].NumeProdus.ToString();
-                    string[] vs = produ.Split(' ');
-                    for (int j = 0; j < vs.Length; j++)
+                    smallLabels[i].Text += vs[j] + " ";
+                    if (j % 3 == 0 && j != 0)
                     {
-                        smallLabels[i].Text += vs[j] + " ";
-                        if (j == 4)
-                        {
-                            smallLabels[i].Text += "\n";
-                        }
-
+                        smallLabels[i].Text += "\n";
                     }
-                    bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
 
                 }
-                else if (i >= produses.Capacity)
-                {
-                    smallLabels[i].Hide();
-                    bigLabels[i].Hide();
-                    pictures[i].Hide();
-                }
-                
-
+                bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
+            }
+            for (int i = produses.Capacity; i < 8; i++)
+            {
+                pictures[i].Image = null;
+                smallLabels[i].Text = null;
+                bigLabels[i].Text = null;
+                buttons[i].Hide();
             }
 
 
@@ -146,14 +147,14 @@ namespace GlobalShop
 
         private void button11_Click(object sender, EventArgs e)
         {
-            panel4.Visible=true;
+            panel4.Visible = true;
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
             label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
             pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             label24.Text = produses[0].NumeProdus;
-            pret.Text = produses[0].Pret.ToString()+" Lei";
+            pret.Text = produses[0].Pret.ToString() + " Lei";
 
             if (CheckStoc.Check(produses[0]) == true)
             {
@@ -201,10 +202,10 @@ namespace GlobalShop
             label21.Text = produses[1].Caracteristici;
 
         }
-        private void buttonHandler(object sender, EventArgs e,int i)
+        private void buttonHandler(object sender, EventArgs e, int i)
         {
-            
-            
+
+
             panel4.Visible = true;
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
@@ -234,6 +235,6 @@ namespace GlobalShop
 
         }
 
-       
+
     }
 }
