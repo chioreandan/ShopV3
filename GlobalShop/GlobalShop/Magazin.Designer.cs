@@ -81,7 +81,6 @@ namespace GlobalShop
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
@@ -94,6 +93,40 @@ namespace GlobalShop
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.button21 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.button26 = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -107,6 +140,7 @@ namespace GlobalShop
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -668,6 +702,7 @@ namespace GlobalShop
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.button21);
             this.panel3.Controls.Add(this.comboBox2);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.metroButton1);
@@ -686,17 +721,6 @@ namespace GlobalShop
             this.button10.TabIndex = 3;
             this.button10.Text = "Contul meu";
             this.button10.UseVisualStyleBackColor = true;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
-            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton1.Location = new System.Drawing.Point(604, 42);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(55, 41);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.UseSelectable = true;
             // 
             // label1
             // 
@@ -833,11 +857,547 @@ namespace GlobalShop
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
+            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton1.Location = new System.Drawing.Point(604, 42);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(55, 41);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.UseSelectable = true;
+            // 
+            // button21
+            // 
+            this.button21.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(691, 43);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(147, 40);
+            this.button21.TabIndex = 49;
+            this.button21.Text = "Cosul meu";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label42);
+            this.panel5.Controls.Add(this.comboBox6);
+            this.panel5.Controls.Add(this.button26);
+            this.panel5.Controls.Add(this.label43);
+            this.panel5.Controls.Add(this.label44);
+            this.panel5.Controls.Add(this.label45);
+            this.panel5.Controls.Add(this.label38);
+            this.panel5.Controls.Add(this.comboBox5);
+            this.panel5.Controls.Add(this.button25);
+            this.panel5.Controls.Add(this.label39);
+            this.panel5.Controls.Add(this.label40);
+            this.panel5.Controls.Add(this.label41);
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Controls.Add(this.comboBox4);
+            this.panel5.Controls.Add(this.button24);
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Controls.Add(this.label36);
+            this.panel5.Controls.Add(this.label37);
+            this.panel5.Controls.Add(this.label30);
+            this.panel5.Controls.Add(this.comboBox3);
+            this.panel5.Controls.Add(this.button23);
+            this.panel5.Controls.Add(this.label31);
+            this.panel5.Controls.Add(this.label32);
+            this.panel5.Controls.Add(this.label33);
+            this.panel5.Controls.Add(this.label29);
+            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.button22);
+            this.panel5.Controls.Add(this.label28);
+            this.panel5.Controls.Add(this.label27);
+            this.panel5.Controls.Add(this.label26);
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(292, 758);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1048, 549);
+            this.panel5.TabIndex = 48;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Champagne & Limousines", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(51, 27);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(325, 40);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Cos de cumparaturi";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Champagne & Limousines", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(125, 113);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(209, 22);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Casti Zalman ZM-HP200";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Lime;
+            this.label27.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(126, 144);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(137, 16);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "Disponibilitate: In stoc";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(702, 111);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(63, 22);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "31 Lei";
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.DarkRed;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button22.Font = new System.Drawing.Font("Champagne & Limousines", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button22.Location = new System.Drawing.Point(706, 136);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(59, 30);
+            this.button22.TabIndex = 4;
+            this.button22.Text = "Sterge";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboBox1.Location = new System.Drawing.Point(463, 119);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(44, 28);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.Text = "1";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(513, 122);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(40, 20);
+            this.label29.TabIndex = 6;
+            this.label29.Text = "buc";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(513, 219);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(40, 20);
+            this.label30.TabIndex = 12;
+            this.label30.Text = "buc";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboBox3.Location = new System.Drawing.Point(463, 216);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(44, 28);
+            this.comboBox3.TabIndex = 11;
+            this.comboBox3.Text = "1";
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.DarkRed;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button23.Font = new System.Drawing.Font("Champagne & Limousines", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button23.Location = new System.Drawing.Point(706, 233);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(59, 30);
+            this.button23.TabIndex = 10;
+            this.button23.Text = "Sterge";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(702, 208);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(63, 22);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "31 Lei";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Lime;
+            this.label32.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(126, 241);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(137, 16);
+            this.label32.TabIndex = 8;
+            this.label32.Text = "Disponibilitate: In stoc";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Champagne & Limousines", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(125, 210);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(209, 22);
+            this.label33.TabIndex = 7;
+            this.label33.Text = "Casti Zalman ZM-HP200";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(513, 314);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(40, 20);
+            this.label34.TabIndex = 18;
+            this.label34.Text = "buc";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboBox4.Location = new System.Drawing.Point(463, 311);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(44, 28);
+            this.comboBox4.TabIndex = 17;
+            this.comboBox4.Text = "1";
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.DarkRed;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button24.Font = new System.Drawing.Font("Champagne & Limousines", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button24.Location = new System.Drawing.Point(706, 328);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(59, 30);
+            this.button24.TabIndex = 16;
+            this.button24.Text = "Sterge";
+            this.button24.UseVisualStyleBackColor = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(702, 303);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(63, 22);
+            this.label35.TabIndex = 15;
+            this.label35.Text = "31 Lei";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Lime;
+            this.label36.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(126, 336);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(137, 16);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Disponibilitate: In stoc";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Champagne & Limousines", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(125, 305);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(209, 22);
+            this.label37.TabIndex = 13;
+            this.label37.Text = "Casti Zalman ZM-HP200";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(513, 403);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(40, 20);
+            this.label38.TabIndex = 24;
+            this.label38.Text = "buc";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboBox5.Location = new System.Drawing.Point(463, 400);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(44, 28);
+            this.comboBox5.TabIndex = 23;
+            this.comboBox5.Text = "1";
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.DarkRed;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button25.Font = new System.Drawing.Font("Champagne & Limousines", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button25.Location = new System.Drawing.Point(706, 417);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(59, 30);
+            this.button25.TabIndex = 22;
+            this.button25.Text = "Sterge";
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(702, 392);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(63, 22);
+            this.label39.TabIndex = 21;
+            this.label39.Text = "31 Lei";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Lime;
+            this.label40.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(126, 425);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(137, 16);
+            this.label40.TabIndex = 20;
+            this.label40.Text = "Disponibilitate: In stoc";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Champagne & Limousines", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(125, 394);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(209, 22);
+            this.label41.TabIndex = 19;
+            this.label41.Text = "Casti Zalman ZM-HP200";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(513, 487);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(40, 20);
+            this.label42.TabIndex = 30;
+            this.label42.Text = "buc";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboBox6.Location = new System.Drawing.Point(463, 484);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(44, 28);
+            this.comboBox6.TabIndex = 29;
+            this.comboBox6.Text = "1";
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.DarkRed;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button26.Font = new System.Drawing.Font("Champagne & Limousines", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button26.Location = new System.Drawing.Point(706, 501);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(59, 30);
+            this.button26.TabIndex = 28;
+            this.button26.Text = "Sterge";
+            this.button26.UseVisualStyleBackColor = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(702, 476);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(63, 22);
+            this.label43.TabIndex = 27;
+            this.label43.Text = "31 Lei";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Lime;
+            this.label44.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(126, 509);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(137, 16);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "Disponibilitate: In stoc";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Champagne & Limousines", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(125, 478);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(209, 22);
+            this.label45.TabIndex = 25;
+            this.label45.Text = "Casti Zalman ZM-HP200";
+            // 
             // Magazin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1363, 774);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -865,6 +1425,8 @@ namespace GlobalShop
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -876,7 +1438,6 @@ namespace GlobalShop
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
@@ -933,5 +1494,39 @@ namespace GlobalShop
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
         private ComboBox comboBox2;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private Panel panel5;
+        private Label label29;
+        private ComboBox comboBox1;
+        private Button button22;
+        private Label label28;
+        private Label label27;
+        private Label label26;
+        private Label label25;
+        private Button button21;
+        private Label label42;
+        private ComboBox comboBox6;
+        private Button button26;
+        private Label label43;
+        private Label label44;
+        private Label label45;
+        private Label label38;
+        private ComboBox comboBox5;
+        private Button button25;
+        private Label label39;
+        private Label label40;
+        private Label label41;
+        private Label label34;
+        private ComboBox comboBox4;
+        private Button button24;
+        private Label label35;
+        private Label label36;
+        private Label label37;
+        private Label label30;
+        private ComboBox comboBox3;
+        private Button button23;
+        private Label label31;
+        private Label label32;
+        private Label label33;
     }
 }

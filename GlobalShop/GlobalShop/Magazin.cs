@@ -48,15 +48,9 @@ namespace GlobalShop
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            List<Produse> produse = new List<Produse>();
-            produse = ProduseController.GetProduse().ToList();
-            foreach (Produse p in produse)
-            {
-                comboBox2.Items.Add(p.NumeProdus);
+            
 
-            }
-            this.comboBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = AutoCompleteSource.ListItems;
+          
 
 
 
@@ -132,8 +126,7 @@ namespace GlobalShop
                 }
                 bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
                 currentProduct = i;
-                //buttons[i].Click += button11_Click;
-                //buttons[i].MouseClick+= button11_Click;
+               
             }
             for (int i = produses.Capacity; i < 8; i++)
             {
@@ -209,65 +202,6 @@ namespace GlobalShop
             panel4.Visible = false;
             panel2.Visible = true;
         }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            panel4.Visible = true;
-            panel2.Visible = false;
-            DateTime tomorrow = DateTime.Now.AddDays(1);
-            label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            label24.Text = produses[1].NumeProdus;
-            pret.Text = produses[1].Pret.ToString() + " Lei";
-
-            if (CheckStoc.Check(produses[1]) == true)
-            {
-                label12.Text = "In Stoc";
-                label12.BackColor = Color.Green;
-            }
-            else if (CheckStoc.Check(produses[1]) == false)
-            {
-                label12.Text = "Stoc epuizat";
-                label12.BackColor = Color.Red;
-
-            }
-            label21.Text = produses[1].Caracteristici;
-
-        }
-        private void buttonHandler(object sender, EventArgs e, int i)
-        {
-
-
-            panel4.Visible = true;
-            panel2.Visible = false;
-            DateTime tomorrow = DateTime.Now.AddDays(1);
-            label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            label24.Text = produses[i].NumeProdus;
-            pret.Text = produses[i].Pret.ToString() + " Lei";
-
-            if (CheckStoc.Check(produses[i]) == true)
-            {
-                label12.Text = "In Stoc";
-                label12.BackColor = Color.Green;
-            }
-            else if (CheckStoc.Check(produses[i]) == false)
-            {
-                label12.Text = "Stoc epuizat";
-                label12.BackColor = Color.Red;
-
-            }
-            label21.Text = produses[i].Caracteristici;
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
+       
     }
 }
