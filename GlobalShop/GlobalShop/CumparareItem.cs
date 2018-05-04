@@ -14,6 +14,12 @@ namespace GlobalShop
     
     public partial class CumparareItem
     {
+        public CumparareItem(int CumparareId,int ProdusId,int NumarIteme)
+        {
+            this.CumparareId = CumparareId;
+            this.ProdusId = ProdusId;
+            this.NumarIteme = NumarIteme;
+        }
         public int CumparareId { get; set; }
         public int ProdusId { get; set; }
         public Nullable<int> NumarIteme { get; set; }

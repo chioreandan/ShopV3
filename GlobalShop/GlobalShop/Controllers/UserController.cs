@@ -11,11 +11,7 @@ namespace GlobalShop.Controllers
     {
         private static ShopEntities shop = new ShopEntities();
         public static IEnumerable<User> GetUsers() => shop.Users.ToList();
-
-        public static User GetUser(string email)
-        {
-            return shop.Users.FirstOrDefault(u => u.Email == email);
-        }
+        public static User GetUser(string email) => shop.Users.FirstOrDefault(u => u.Email == email);
         public static void Create(User user)
         {
             shop.Users.Add(user);
