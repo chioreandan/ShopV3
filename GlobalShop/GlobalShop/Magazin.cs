@@ -10,17 +10,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GlobalShop.Controllers.Products;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+using System.IO;
 
 namespace GlobalShop
 {
     public partial class Magazin : MetroForm
     {
+        Produse produs;
         User user;
+
+        public List<Produse> cos;
         public static List<Produse> produses;
+
         Button button = new Button();
-        //Button clickedButton = (Button)sender;
 
         int currentProduct;
+        int pressed=0;
+
+        //Button clickedButton = (Button)sender;
+
+
         //button.Click += new EventHandler(button_Click);
 
         public Magazin(User user)
@@ -48,9 +57,9 @@ namespace GlobalShop
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            
 
-          
+
+
 
 
 
@@ -60,6 +69,7 @@ namespace GlobalShop
 
         private void Magazin_Load(object sender, EventArgs e)
         {
+            cos = new List<Produse>();
             //panel5.Visible = false;
             produses = ProduseController.GetProduse().ToList();
             foreach (Produse p in produses)
@@ -109,12 +119,11 @@ namespace GlobalShop
             List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
             List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
             List<Button> buttons = new List<Button> { button11, button12, button13, button14, button15, button16, button17, button18 };
-            
-            for (int i = 0; i < produses.Capacity; i++)
+            Console.WriteLine();
+            for (int i = 0; i < produses.Count; i++)
             {
-
                 smallLabels[i].Text = null;
-                string produ = produses[i].NumeProdus.ToString();
+                string produ = produses[i].NumeProdus;
                 string[] vs = produ.Split(' ');
                 for (int j = 0; j < vs.Length; j++)
                 {
@@ -123,13 +132,21 @@ namespace GlobalShop
                     {
                         smallLabels[i].Text += "\n";
                     }
-
                 }
                 bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
-                currentProduct = i;
-               
+                if (i == 0)
+                {
+                    //BitmapImage 
+                    //pictures[0].Image = Bitmap.FromFile(Convert.ToBase64String(produses[0].Imagine));
+                    //var ms = new MemoryStream(produses[0].Imagine);
+                    //pictureBox1.Image = Image.FromStream(ms);
+                    // pictures[0].Image = Image.FromStream(produses[0].Imagine);
+                    // pictures[0].Image = (Bitmap)((new ImageConverter()).ConvertFrom(produses[0].Imagine));
+                    //pictureBox1.Image = Image.FromStream(new MemoryStream((byte[])produses[0].Imagine));
+                }
+
             }
-            for (int i = produses.Capacity; i < 8; i++)
+            for (int i = produses.Count; i < 8; i++)
             {
                 pictures[i].Image = null;
                 smallLabels[i].Text = null;
@@ -146,34 +163,10 @@ namespace GlobalShop
             Button clickedButton = sender as Button;
             if (clickedButton == null)
                 return;
-            switch (clickedButton.Name)
-            {
-                case "button11":
-                    currentProduct = 0;
-                    break;
-                case "button12":
-                    currentProduct = 1;
-                    break;
-                case "button13":
-                    currentProduct = 2;
-                    break;
-                case "button14":
-                    currentProduct = 3;
-                    break;
-                case "button15":
-                    currentProduct = 4;
-                    break;
-                case "button16":
-                    currentProduct = 5;
-                    break;
-                case "button17":
-                    currentProduct = 6;
-                    break;
-                case "button18":
-                    currentProduct = 7;
-                    break;
+            currentProduct = ButtonController.returnCategorie(clickedButton.Name);
+            produs = new Produse();
 
-            }
+            produs = produses[currentProduct];
             panel5.Visible = false;
             panel4.Visible = true;
             panel2.Visible = false;
@@ -201,6 +194,8 @@ namespace GlobalShop
 
         private void button19_Click(object sender, EventArgs e)
         {
+            pressed = 0;
+
             panel4.Visible = false;
             panel5.Visible = false;
             panel2.Visible = true;
@@ -211,12 +206,70 @@ namespace GlobalShop
             panel5.Visible = true;
             panel2.Visible = false;
             panel4.Visible = false;
+            List<Label> nume = new List<Label> { nume1, nume2, nume3, nume4, nume5, nume6, nume7, nume8 };
+            List<Label> preturi = new List<Label> { pret1, pret2, pret3, pret4, pret5, pret6, pret7, pret8 };
+            List<Label> stocuri = new List<Label> { stoc1, stoc2, stoc3, stoc4, stoc5, stoc6, stoc7, stoc8 };
+            List<Label> buc = new List<Label> { buc1, buc2, buc3, buc4, buc5, buc6, buc7, buc8 };
+            List<ComboBox> boxes = new List<ComboBox> { combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8 };
+            List<Button> buttons = new List<Button> { b1, b2, b3, b4, b5, b6, b7, b8 };
+            pressed = 0;
+            foreach(Produse p in cos)
+            {
+                Console.WriteLine(p.NumeProdus);
+            }
+            for (int i = 0; i < cos.Count; i++)
+            {
+                nume[i].Show();
+                preturi[i].Show();
+                stocuri[i].Show();
+                buc[i].Show();
+                boxes[i].Show();
+                buttons[i].Show();
+                nume[i].Text = cos[i].NumeProdus;
+                preturi[i].Text = cos[i].Pret.ToString() + " Lei";
+                if (CheckStoc.Check(cos[i]) == true)
+                {
+                    stocuri[i].Text = "In Stoc";
+                    stocuri[i].BackColor = Color.Green;
+                }
+                else if (CheckStoc.Check(produses[currentProduct]) == false)
+                {
+                    stocuri[i].Text = "Stoc epuizat";
+                    stocuri[i].BackColor = Color.Red;
+
+                }
+
+            }
+            for (int i = cos.Count; i < 8; i++)
+            {
+                nume[i].Hide();
+                preturi[i].Hide();
+                stocuri[i].Hide();
+                buc[i].Hide();
+                boxes[i].Hide();
+                buttons[i].Hide();
+
+            }
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
+            pressed = 0;
             panel5.Visible = false;
             panel2.Visible = true;
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            
+            if (pressed == 0)
+                cos.Add(produs);
+            pressed++;
+
+
+
+        }
+
+
     }
 }
