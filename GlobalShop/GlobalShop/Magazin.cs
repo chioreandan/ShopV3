@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using GlobalShop.Controllers.Products;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 using System.IO;
+using GlobalShop.Controllers.Buy;
 
 namespace GlobalShop
 {
@@ -270,6 +271,9 @@ namespace GlobalShop
 
         }
 
-
+        private void button28_Click(object sender, EventArgs e)
+        {
+            //CumparareController.AddCumparare(user.UserId);
+        }
     }
 }
