@@ -73,6 +73,8 @@
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ConfirmationMail.cs" />
+    <Compile Include="Controllers\Buy\CumparareController.cs" />
+    <Compile Include="Controllers\Buy\CumparareItemController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\Products\CategorieController.cs" />
     <Compile Include="Controllers\Products\CautareProduse.cs" />

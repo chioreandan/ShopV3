@@ -37,6 +37,22 @@ namespace GlobalShop
         {
             InitializeComponent();
             this.user = user;
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
         public Magazin()
@@ -273,6 +289,17 @@ namespace GlobalShop
 
         private void button28_Click(object sender, EventArgs e)
         {
+            Cumparare cumparare = new Cumparare();
+            
+            cumparare.UserId = user.UserId;
+            CumparareController.AddCumparare(cumparare);
+            foreach(Produse p in cos)
+            {
+                CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId,p.ProdusId,1);
+                CumparareItemController.AddCumparareItem(cumparareItem);
+            }
+
+            MessageBox.Show("SUCCES");
             //CumparareController.AddCumparare(user.UserId);
         }
     }
