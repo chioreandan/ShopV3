@@ -16,9 +16,16 @@ namespace GlobalShop.Controllers
         {
             shop.Users.Add(user);
             shop.SaveChanges();
-
         }
-
+        public static void UpdateUser(User user)
+        {
+            var entity = shop.Users.Find(user.UserId);
+            if(entity== null)
+            {
+                return;
+            }
+            shop.Entry(entity).CurrentValues.SetValues(user);
+        }
         
     }
 }

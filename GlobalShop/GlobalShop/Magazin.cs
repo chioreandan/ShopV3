@@ -302,5 +302,11 @@ namespace GlobalShop
             MessageBox.Show("SUCCES");
             //CumparareController.AddCumparare(user.UserId);
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            UserProfile profile = new UserProfile();
+            profile.Show();
+        }
     }
 }

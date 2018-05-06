@@ -65,24 +65,15 @@ namespace GlobalShop
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
@@ -92,7 +83,6 @@ namespace GlobalShop
             this.label12 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
             this.pret = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.buc7 = new System.Windows.Forms.Label();
@@ -146,8 +136,22 @@ namespace GlobalShop
             this.stoc1 = new System.Windows.Forms.Label();
             this.nume1 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -156,10 +160,7 @@ namespace GlobalShop
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -332,6 +333,7 @@ namespace GlobalShop
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label18);
@@ -373,7 +375,7 @@ namespace GlobalShop
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(789, 519);
+            this.label20.Location = new System.Drawing.Point(789, 542);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 26);
             this.label20.TabIndex = 47;
@@ -383,7 +385,7 @@ namespace GlobalShop
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(560, 519);
+            this.label19.Location = new System.Drawing.Point(560, 542);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 26);
             this.label19.TabIndex = 46;
@@ -393,7 +395,7 @@ namespace GlobalShop
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(325, 519);
+            this.label18.Location = new System.Drawing.Point(325, 542);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 26);
             this.label18.TabIndex = 45;
@@ -403,7 +405,7 @@ namespace GlobalShop
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(93, 519);
+            this.label17.Location = new System.Drawing.Point(93, 542);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(89, 26);
             this.label17.TabIndex = 44;
@@ -413,7 +415,7 @@ namespace GlobalShop
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(790, 227);
+            this.label16.Location = new System.Drawing.Point(790, 250);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(89, 26);
             this.label16.TabIndex = 43;
@@ -423,7 +425,7 @@ namespace GlobalShop
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(559, 227);
+            this.label15.Location = new System.Drawing.Point(559, 250);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 26);
             this.label15.TabIndex = 42;
@@ -433,7 +435,7 @@ namespace GlobalShop
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(324, 227);
+            this.label14.Location = new System.Drawing.Point(324, 250);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 26);
             this.label14.TabIndex = 41;
@@ -443,7 +445,7 @@ namespace GlobalShop
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(93, 227);
+            this.label13.Location = new System.Drawing.Point(93, 250);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(89, 26);
             this.label13.TabIndex = 40;
@@ -453,7 +455,7 @@ namespace GlobalShop
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(792, 484);
+            this.label10.Location = new System.Drawing.Point(792, 507);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 16);
             this.label10.TabIndex = 39;
@@ -463,7 +465,7 @@ namespace GlobalShop
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(562, 484);
+            this.label9.Location = new System.Drawing.Point(562, 507);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(46, 16);
             this.label9.TabIndex = 38;
@@ -473,7 +475,7 @@ namespace GlobalShop
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(327, 484);
+            this.label8.Location = new System.Drawing.Point(327, 507);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 16);
             this.label8.TabIndex = 37;
@@ -483,7 +485,7 @@ namespace GlobalShop
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(95, 484);
+            this.label7.Location = new System.Drawing.Point(95, 507);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 16);
             this.label7.TabIndex = 36;
@@ -493,7 +495,7 @@ namespace GlobalShop
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(791, 194);
+            this.label6.Location = new System.Drawing.Point(791, 217);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 16);
             this.label6.TabIndex = 35;
@@ -503,7 +505,7 @@ namespace GlobalShop
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(562, 194);
+            this.label5.Location = new System.Drawing.Point(562, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 16);
             this.label5.TabIndex = 34;
@@ -513,7 +515,7 @@ namespace GlobalShop
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(327, 194);
+            this.label4.Location = new System.Drawing.Point(327, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 33;
@@ -525,7 +527,7 @@ namespace GlobalShop
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button15.Location = new System.Drawing.Point(97, 548);
+            this.button15.Location = new System.Drawing.Point(97, 571);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(150, 23);
             this.button15.TabIndex = 32;
@@ -539,7 +541,7 @@ namespace GlobalShop
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button16.Location = new System.Drawing.Point(330, 549);
+            this.button16.Location = new System.Drawing.Point(330, 572);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(150, 23);
             this.button16.TabIndex = 31;
@@ -553,7 +555,7 @@ namespace GlobalShop
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button17.Location = new System.Drawing.Point(564, 546);
+            this.button17.Location = new System.Drawing.Point(564, 569);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(150, 23);
             this.button17.TabIndex = 30;
@@ -567,7 +569,7 @@ namespace GlobalShop
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button18.Location = new System.Drawing.Point(794, 549);
+            this.button18.Location = new System.Drawing.Point(794, 572);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(150, 23);
             this.button18.TabIndex = 29;
@@ -575,45 +577,13 @@ namespace GlobalShop
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button11_Click);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(795, 318);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(565, 318);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(330, 318);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox7.TabIndex = 18;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(97, 318);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
-            // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button14.Location = new System.Drawing.Point(794, 256);
+            this.button14.Location = new System.Drawing.Point(794, 279);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(150, 23);
             this.button14.TabIndex = 16;
@@ -627,7 +597,7 @@ namespace GlobalShop
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button13.Location = new System.Drawing.Point(564, 256);
+            this.button13.Location = new System.Drawing.Point(564, 279);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(150, 23);
             this.button13.TabIndex = 15;
@@ -641,7 +611,7 @@ namespace GlobalShop
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button12.Location = new System.Drawing.Point(329, 256);
+            this.button12.Location = new System.Drawing.Point(329, 279);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(150, 23);
             this.button12.TabIndex = 14;
@@ -655,7 +625,7 @@ namespace GlobalShop
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button11.Location = new System.Drawing.Point(97, 256);
+            this.button11.Location = new System.Drawing.Point(97, 279);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(150, 23);
             this.button11.TabIndex = 13;
@@ -667,43 +637,11 @@ namespace GlobalShop
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 194);
+            this.label3.Location = new System.Drawing.Point(94, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "label3";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(794, 26);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(564, 26);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(329, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(96, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // comboBox2
             // 
@@ -751,17 +689,7 @@ namespace GlobalShop
             this.button10.TabIndex = 3;
             this.button10.Text = "Contul meu";
             this.button10.UseVisualStyleBackColor = true;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
-            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton1.Location = new System.Drawing.Point(604, 42);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(55, 41);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.UseSelectable = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label1
             // 
@@ -866,14 +794,6 @@ namespace GlobalShop
             this.pret.Size = new System.Drawing.Size(123, 36);
             this.pret.TabIndex = 3;
             this.pret.Text = "700 Lei";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
             // 
             // button19
             // 
@@ -1723,6 +1643,99 @@ namespace GlobalShop
             this.label25.TabIndex = 0;
             this.label25.Text = "Cos de cumparaturi";
             // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Location = new System.Drawing.Point(-1, 45);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1051, 551);
+            this.panel6.TabIndex = 48;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
+            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton1.Location = new System.Drawing.Point(604, 42);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(55, 41);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.UseSelectable = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(795, 341);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(565, 341);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox6.TabIndex = 19;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(330, 341);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox7.TabIndex = 18;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(97, 341);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox8.TabIndex = 17;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(794, 49);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(564, 49);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(329, 49);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(96, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
             // Magazin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -1743,6 +1756,12 @@ namespace GlobalShop
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1751,13 +1770,7 @@ namespace GlobalShop
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1878,5 +1891,6 @@ namespace GlobalShop
         private Label stoc8;
         private Label nume8;
         private Button button28;
+        private Panel panel6;
     }
 }
