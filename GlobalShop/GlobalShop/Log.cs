@@ -27,12 +27,18 @@ namespace GlobalShop
             {
                 User user = new User();
                 user = UserController.GetUser(email);
-                if (LoginController.CheckVanzator(user.UserId) == false)
+                if (LoginController.CheckVanzator(user.UserId) == false && LoginController.CheckAdmin(user.UserId)==false)
                 {
                     Magazin magazin = new Magazin(user);
                     magazin.Show();
                 }
-                else if (LoginController.CheckVanzator(user.UserId) == true)
+                else if(LoginController.CheckAdmin(user.UserId)==true && LoginController.CheckVanzator(user.UserId) == false)
+                {
+                    AdministratorWindow administratorWindow = new AdministratorWindow();
+                    administratorWindow.Show();
+
+                }
+                else if (LoginController.CheckVanzator(user.UserId) == true && LoginController.CheckAdmin(user.UserId)==false)
                 {
                     AddProducts addProducts = new AddProducts();
                     addProducts.Show();
