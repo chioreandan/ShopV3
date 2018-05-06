@@ -27,8 +27,16 @@ namespace GlobalShop
             {
                 User user = new User();
                 user = UserController.GetUser(email);
-                Magazin magazin = new Magazin(user);
-                magazin.Show();
+                if (LoginController.CheckVanzator(user.UserId) == false)
+                {
+                    Magazin magazin = new Magazin(user);
+                    magazin.Show();
+                }
+                else if (LoginController.CheckVanzator(user.UserId) == true)
+                {
+                    AddProducts addProducts = new AddProducts();
+                    addProducts.Show();
+                }
                 this.Close();
             }
             else

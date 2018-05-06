@@ -29,5 +29,6 @@ namespace GlobalShop.Controllers.Products
             produse=shop.Produses.Where(s => s.CategoriiProduse.CategorieId == s.CategorieId).ToList();
             return produse;
         }
+        
     }
 }

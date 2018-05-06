@@ -130,6 +130,9 @@ namespace GlobalShop
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            panel2.Visible=true;
+            panel4.Visible = false;
+            panel5.Visible = false;
             Button button = sender as Button;
             produses = CategorieController.getProduse(button.Text.ToString());
             List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
@@ -305,7 +308,7 @@ namespace GlobalShop
 
         private void button10_Click(object sender, EventArgs e)
         {
-            UserProfile profile = new UserProfile();
+            UserProfile profile = new UserProfile(user);
             profile.Show();
         }
     }

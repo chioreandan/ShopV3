@@ -19,7 +19,18 @@ namespace GlobalShop
         {
             this.CumparareItems = new HashSet<CumparareItem>();
         }
-    
+        public Produse(string Nume, decimal PretProdus, int Stoc, string Caracteristici, byte[] imagine, int CategorieId, int BrandId)
+        {
+            this.NumeProdus = Nume;
+            this.Pret = PretProdus;
+            this.Stoc = Stoc;
+            this.Caracteristici = Caracteristici;
+            this.Imagine = imagine;
+            this.CategorieId = CategorieId;
+            this.BrandId = BrandId;
+
+        }
+
         public int ProdusId { get; set; }
         public Nullable<int> VanzatorId { get; set; }
         public Nullable<int> BrandId { get; set; }

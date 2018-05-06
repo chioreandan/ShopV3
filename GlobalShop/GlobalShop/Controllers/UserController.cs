@@ -11,7 +11,9 @@ namespace GlobalShop.Controllers
     {
         private static ShopEntities shop = new ShopEntities();
         public static IEnumerable<User> GetUsers() => shop.Users.ToList();
+
         public static User GetUser(string email) => shop.Users.FirstOrDefault(u => u.Email == email);
+        public static User GetUserById(int Id) => shop.Users.FirstOrDefault(u => u.UserId == Id);
         public static void Create(User user)
         {
             shop.Users.Add(user);
@@ -26,6 +28,32 @@ namespace GlobalShop.Controllers
             }
             shop.Entry(entity).CurrentValues.SetValues(user);
         }
+        public static void UserUpdateDate(string nume,string adresa,string telefon,int id)
+        {
+            User userToUpdate = UserController.GetUserById(id);
+
+            userToUpdate.NumePrenume = nume;
+            userToUpdate.Email = adresa;
+            userToUpdate.Telefon = telefon;
+            shop.SaveChanges();
+            
+        }
+        public static void UserUpdateSecuritate(string email,string parola, int id)
+        {
+            User userToUpdate = UserController.GetUserById(id);
+            userToUpdate.Adresa = email;
+            userToUpdate.Parola = parola;
+            shop.SaveChanges();
+        }
+        /*
+          public static List<Produse> getByCategory()
+        {
+            List<Produse> produse = new List<Produse>();
+            produse=shop.Produses.Where(s => s.CategoriiProduse.CategorieId == s.CategorieId).ToList();
+            return produse;
+        }
+         */
         
+
     }
 }

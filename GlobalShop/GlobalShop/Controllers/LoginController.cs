@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using GlobalShop.Controllers.Seller;
+using GlobalShop.Controllers.Administrator;
 namespace GlobalShop.Controllers
 {
     public class LoginController
@@ -46,8 +47,30 @@ namespace GlobalShop.Controllers
                 return false;
             }
         }
-       
-       
+        public static bool CheckVanzator(int id)
+        {
+            List<Vanzatori> vanzatori = new List<Vanzatori>();
+            vanzatori=VanzatorController.GetUsers().ToList();
+            foreach(Vanzatori v in vanzatori)
+            {
+                if (v.UserId == id)
+                    return true;
+            }
+            return false;
+        }
+        public static bool CheckAdmin(int id)
+        {
+            List<Admin> admins = new List<Admin>();
+            admins = AdminsController.GetAdmins().ToList();
+            foreach (Admin a in admins)
+            {
+                if (a.UserId == id)
+                    return true;
+            }
+            return false;
+        }
+
+
 
 
     }
