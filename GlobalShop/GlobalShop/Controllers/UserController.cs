@@ -13,6 +13,7 @@ namespace GlobalShop.Controllers
         public static IEnumerable<User> GetUsers() => shop.Users.ToList();
 
         public static User GetUser(string email) => shop.Users.FirstOrDefault(u => u.Email == email);
+
         public static User GetUserById(int Id) => shop.Users.FirstOrDefault(u => u.UserId == Id);
         public static void Create(User user)
         {
@@ -45,14 +46,11 @@ namespace GlobalShop.Controllers
             userToUpdate.Parola = parola;
             shop.SaveChanges();
         }
-        /*
-          public static List<Produse> getByCategory()
+        public static void DeleteUser(User user)
         {
-            List<Produse> produse = new List<Produse>();
-            produse=shop.Produses.Where(s => s.CategoriiProduse.CategorieId == s.CategorieId).ToList();
-            return produse;
+            shop.Users.Remove(user);
+            shop.SaveChanges();
         }
-         */
         
 
     }

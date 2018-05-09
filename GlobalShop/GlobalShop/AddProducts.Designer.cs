@@ -108,7 +108,7 @@
             this.imagine.TabIndex = 29;
             this.imagine.Text = "Imagine";
             this.imagine.UseVisualStyleBackColor = false;
-          
+            this.imagine.Click += new System.EventHandler(this.imagine_Click);
             // 
             // pictureBox1
             // 
