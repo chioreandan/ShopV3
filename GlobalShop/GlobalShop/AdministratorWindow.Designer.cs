@@ -46,6 +46,7 @@
             this.info_user.TabIndex = 11;
             this.info_user.Text = "Informatii Utilizator";
             this.info_user.UseVisualStyleBackColor = false;
+            this.info_user.Click += new System.EventHandler(this.info_user_Click);
             // 
             // viewProduct
             // 

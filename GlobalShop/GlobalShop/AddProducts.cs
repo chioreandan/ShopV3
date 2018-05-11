@@ -39,7 +39,7 @@ namespace GlobalShop
             try
             {
 
-                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, optiune,optiune1);
+                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, optiune, optiune1);
 
             }
             catch
@@ -56,17 +56,15 @@ namespace GlobalShop
             return ms.ToArray();
         }
 
-      /*  private void imagine_Click(object sender, EventArgs e)
+        private void imagine_Click(object sender, EventArgs e)
         {
-           
-            DialogResult res = openFileDialog1.sh
-            //openFileDialog1.Filter = "jpg|*.jpg";
-
-            if (res == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
-
-            }
-        }*/
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "jpg|*.jpg";
+            DialogResult result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+                pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+            
+            
+        }
     }
 }

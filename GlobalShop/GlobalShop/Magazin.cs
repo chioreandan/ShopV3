@@ -158,7 +158,11 @@ namespace GlobalShop
                 {
                     //BitmapImage 
                     //pictures[0].Image = Bitmap.FromFile(Convert.ToBase64String(produses[0].Imagine));
-                    //var ms = new MemoryStream(produses[0].Imagine);
+                    byte[] b = produses[0].Imagine;
+                   // var ms = new MemoryStream(produses[0].Imagine);
+                   Console.WriteLine(b+" "+produses[0].NumeProdus);
+                    //Image img = Image.FromStream(ms);
+                    //pictureBox1.Image = img;
                     //pictureBox1.Image = Image.FromStream(ms);
                     // pictures[0].Image = Image.FromStream(produses[0].Imagine);
                     // pictures[0].Image = (Bitmap)((new ImageConverter()).ConvertFrom(produses[0].Imagine));

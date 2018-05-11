@@ -100,6 +100,12 @@
     <Compile Include="Controllers\Seller\AddProductsController.cs" />
     <Compile Include="Controllers\Seller\VanzatorController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdministratorWindow.resx">
       <DependentUpon>AdministratorWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>
