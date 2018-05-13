@@ -33,7 +33,7 @@ namespace GlobalShop.Controllers
             User userToUpdate = UserController.GetUserById(id);
 
             userToUpdate.NumePrenume = nume;
-            userToUpdate.Email = adresa;
+            userToUpdate.Adresa = adresa;
             userToUpdate.Telefon = telefon;
             shop.SaveChanges();
             
@@ -41,7 +41,7 @@ namespace GlobalShop.Controllers
         public static void UserUpdateSecuritate(string email,string parola, int id)
         {
             User userToUpdate = UserController.GetUserById(id);
-            userToUpdate.Adresa = email;
+            userToUpdate.Email = email;
             userToUpdate.Parola = parola;
             shop.SaveChanges();
         }

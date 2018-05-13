@@ -69,5 +69,10 @@ namespace GlobalShop
         {
             UserController.UserUpdateSecuritate(textBox5.Text, textBox4.Text, user.UserId);
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
