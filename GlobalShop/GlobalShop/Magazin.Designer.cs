@@ -1011,6 +1011,7 @@ namespace GlobalShop
             this.b7.TabIndex = 48;
             this.b7.Text = "Sterge";
             this.b7.UseVisualStyleBackColor = false;
+            this.b7.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret7
             // 
@@ -1104,6 +1105,7 @@ namespace GlobalShop
             this.b6.TabIndex = 42;
             this.b6.Text = "Sterge";
             this.b6.UseVisualStyleBackColor = false;
+            this.b6.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret6
             // 
@@ -1197,6 +1199,7 @@ namespace GlobalShop
             this.b8.TabIndex = 36;
             this.b8.Text = "Sterge";
             this.b8.UseVisualStyleBackColor = false;
+            this.b8.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret8
             // 
@@ -1310,6 +1313,7 @@ namespace GlobalShop
             this.b5.TabIndex = 28;
             this.b5.Text = "Sterge";
             this.b5.UseVisualStyleBackColor = false;
+            this.b5.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret5
             // 
@@ -1403,6 +1407,7 @@ namespace GlobalShop
             this.b4.TabIndex = 22;
             this.b4.Text = "Sterge";
             this.b4.UseVisualStyleBackColor = false;
+            this.b4.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret4
             // 
@@ -1496,6 +1501,7 @@ namespace GlobalShop
             this.b3.TabIndex = 16;
             this.b3.Text = "Sterge";
             this.b3.UseVisualStyleBackColor = false;
+            this.b3.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret3
             // 
@@ -1589,6 +1595,7 @@ namespace GlobalShop
             this.b2.TabIndex = 10;
             this.b2.Text = "Sterge";
             this.b2.UseVisualStyleBackColor = false;
+            this.b2.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret2
             // 
@@ -1682,6 +1689,7 @@ namespace GlobalShop
             this.b1.TabIndex = 4;
             this.b1.Text = "Sterge";
             this.b1.UseVisualStyleBackColor = false;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // pret1
             // 
@@ -1731,9 +1739,9 @@ namespace GlobalShop
             this.ClientSize = new System.Drawing.Size(1363, 774);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
             this.Font = new System.Drawing.Font("Champagne & Limousines", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);

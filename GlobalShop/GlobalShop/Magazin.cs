@@ -237,10 +237,7 @@ namespace GlobalShop
             List<ComboBox> boxes = new List<ComboBox> { combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8 };
             List<Button> buttons = new List<Button> { b1, b2, b3, b4, b5, b6, b7, b8 };
             pressed = 0;
-            foreach(Produse p in cos)
-            {
-                Console.WriteLine(p.NumeProdus);
-            }
+           
             for (int i = 0; i < cos.Count; i++)
             {
                 nume[i].Show();
@@ -296,13 +293,19 @@ namespace GlobalShop
 
         private void button28_Click(object sender, EventArgs e)
         {
+            List<ComboBox> boxes = new List<ComboBox> { combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8 };
             Cumparare cumparare = new Cumparare();
             
             cumparare.UserId = user.UserId;
             CumparareController.AddCumparare(cumparare);
-            foreach(Produse p in cos)
+           /* foreach(Produse p in cos)
             {
                 CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId,p.ProdusId,1);
+                
+            }*/
+            for(int i = 0; i < cos.Count(); i++)
+            {
+                CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId, cos[i].ProdusId, Convert.ToInt32(boxes[i].Text));
                 CumparareItemController.AddCumparareItem(cumparareItem);
             }
 
@@ -314,6 +317,16 @@ namespace GlobalShop
         {
             UserProfile profile = new UserProfile(user);
             profile.Show();
+        }
+
+        private void b1_Click(object sender, EventArgs e)
+        {
+            Button clickedButton2 = sender as Button;
+            if (clickedButton2 == null)
+                return;
+            int item = DeleteCosController.returnCategorie(clickedButton2.Name);
+            cos.RemoveAt(item);
+            button21_Click(sender, e);
         }
     }
 }
