@@ -1,0 +1,10 @@
+use ShopV3
+GO
+Alter Table Produse
+DROP Column Imagine;
+
+
+use ShopV3
+GO
+Alter Table Produse
+ADD Imagine Varchar(255);
