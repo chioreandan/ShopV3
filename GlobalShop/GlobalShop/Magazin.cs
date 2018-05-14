@@ -298,19 +298,14 @@ namespace GlobalShop
             
             cumparare.UserId = user.UserId;
             CumparareController.AddCumparare(cumparare);
-           /* foreach(Produse p in cos)
-            {
-                CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId,p.ProdusId,1);
-                
-            }*/
+         
             for(int i = 0; i < cos.Count(); i++)
             {
                 CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId, cos[i].ProdusId, Convert.ToInt32(boxes[i].Text));
                 CumparareItemController.AddCumparareItem(cumparareItem);
             }
 
-            MessageBox.Show("SUCCES");
-            //CumparareController.AddCumparare(user.UserId);
+            MessageBox.Show("Comanda a fost trimisa cu succes");
         }
 
         private void button10_Click(object sender, EventArgs e)
