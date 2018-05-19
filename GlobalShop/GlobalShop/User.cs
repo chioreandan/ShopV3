@@ -21,15 +21,6 @@ namespace GlobalShop
             this.Cumparares = new HashSet<Cumparare>();
             this.Vanzatoris = new HashSet<Vanzatori>();
         }
-        public User(string numePrenume, string email,string telefon, string adresa, string parola, string nickname)
-        {
-            NumePrenume = numePrenume;
-            Email = email;
-            Telefon = telefon;
-            Adresa = adresa;
-            Parola = parola;
-            Nickname = nickname;
-        }
     
         public int UserId { get; set; }
         public string NumePrenume { get; set; }

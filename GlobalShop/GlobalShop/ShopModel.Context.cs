@@ -33,5 +33,6 @@ namespace GlobalShop
         public virtual DbSet<Produse> Produses { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Vanzatori> Vanzatoris { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

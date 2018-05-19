@@ -21,6 +21,7 @@
         <AssociationConnector Association="GlobalShopModel.FK__Cumparare__Produ__4BAC3F29" ManuallyRouted="false" />
         <AssociationConnector Association="GlobalShopModel.FK__Produse__Vanzato__4316F928" ManuallyRouted="false" />
         <AssociationConnector Association="GlobalShopModel.FK__Vanzatori__UserI__398D8EEE" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="GlobalShopModel.sysdiagram" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

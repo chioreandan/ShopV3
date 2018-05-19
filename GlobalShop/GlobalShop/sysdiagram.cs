@@ -12,13 +12,12 @@ namespace GlobalShop
     using System;
     using System.Collections.Generic;
     
-    public partial class CumparareItem
+    public partial class sysdiagram
     {
-        public int CumparareId { get; set; }
-        public int ProdusId { get; set; }
-        public Nullable<int> NumarIteme { get; set; }
-    
-        public virtual Cumparare Cumparare { get; set; }
-        public virtual Produse Produse { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

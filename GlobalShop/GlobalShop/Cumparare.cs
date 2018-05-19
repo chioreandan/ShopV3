@@ -15,10 +15,6 @@ namespace GlobalShop
     public partial class Cumparare
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cumparare(int UserId)
-        {
-            this.UserId = UserId;
-        }
         public Cumparare()
         {
             this.CumparareItems = new HashSet<CumparareItem>();

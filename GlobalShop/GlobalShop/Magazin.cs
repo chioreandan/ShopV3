@@ -26,7 +26,7 @@ namespace GlobalShop
         Button button = new Button();
 
         int currentProduct;
-        int pressed=0;
+        int pressed = 0;
 
         //Button clickedButton = (Button)sender;
 
@@ -53,7 +53,6 @@ namespace GlobalShop
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-
         }
         public Magazin()
         {
@@ -74,14 +73,6 @@ namespace GlobalShop
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
-
-
-
-
-
-
         }
 
         private void Magazin_Load(object sender, EventArgs e)
@@ -101,13 +92,11 @@ namespace GlobalShop
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-
             //produse
             List<PictureBox> pictures = new List<PictureBox> { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8 };
             List<Label> smallLabels = new List<Label> { label3, label4, label5, label6, label7, label8, label9, label10 };
             List<Label> bigLabels = new List<Label> { label13, label14, label15, label16, label17, label18, label19, label20 };
             List<Button> buttons = new List<Button> { button11, button12, button12, button13, button14, button15, button16, button17, button18 };
-
             produses = RandomProducts.RandomProduse();
             for (int i = 0; i < 8; i++)
             {
@@ -121,16 +110,13 @@ namespace GlobalShop
                     {
                         smallLabels[i].Text += "\n";
                     }
-
                 }
                 bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
-
             }
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            panel2.Visible=true;
+            panel2.Visible = true;
             panel4.Visible = false;
             panel5.Visible = false;
             Button button = sender as Button;
@@ -156,17 +142,7 @@ namespace GlobalShop
                 bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
                 if (i == 0)
                 {
-                    //BitmapImage 
-                    //pictures[0].Image = Bitmap.FromFile(Convert.ToBase64String(produses[0].Imagine));
-                    byte[] b = produses[0].Imagine;
-                   // var ms = new MemoryStream(produses[0].Imagine);
-                   Console.WriteLine(b+" "+produses[0].NumeProdus);
-                    //Image img = Image.FromStream(ms);
-                    //pictureBox1.Image = img;
-                    //pictureBox1.Image = Image.FromStream(ms);
-                    // pictures[0].Image = Image.FromStream(produses[0].Imagine);
-                    // pictures[0].Image = (Bitmap)((new ImageConverter()).ConvertFrom(produses[0].Imagine));
-                    //pictureBox1.Image = Image.FromStream(new MemoryStream((byte[])produses[0].Imagine));
+                   
                 }
 
             }
@@ -177,11 +153,7 @@ namespace GlobalShop
                 bigLabels[i].Text = null;
                 buttons[i].Hide();
             }
-
-
         }
-
-
         private void button11_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -237,7 +209,7 @@ namespace GlobalShop
             List<ComboBox> boxes = new List<ComboBox> { combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8 };
             List<Button> buttons = new List<Button> { b1, b2, b3, b4, b5, b6, b7, b8 };
             pressed = 0;
-           
+
             for (int i = 0; i < cos.Count; i++)
             {
                 nume[i].Show();
@@ -257,9 +229,7 @@ namespace GlobalShop
                 {
                     stocuri[i].Text = "Stoc epuizat";
                     stocuri[i].BackColor = Color.Red;
-
                 }
-
             }
             for (int i = cos.Count; i < 8; i++)
             {
@@ -269,42 +239,31 @@ namespace GlobalShop
                 buc[i].Hide();
                 boxes[i].Hide();
                 buttons[i].Hide();
-
             }
         }
-
         private void button27_Click(object sender, EventArgs e)
         {
             pressed = 0;
             panel5.Visible = false;
             panel2.Visible = true;
         }
-
         private void button20_Click(object sender, EventArgs e)
         {
-            
             if (pressed == 0)
                 cos.Add(produs);
             pressed++;
-
-
-
         }
-
         private void button28_Click(object sender, EventArgs e)
         {
             List<ComboBox> boxes = new List<ComboBox> { combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8 };
             Cumparare cumparare = new Cumparare();
-            
             cumparare.UserId = user.UserId;
             CumparareController.AddCumparare(cumparare);
-         
-            for(int i = 0; i < cos.Count(); i++)
+            for (int i = 0; i < cos.Count(); i++)
             {
                 CumparareItem cumparareItem = new CumparareItem(cumparare.CumparareId, cos[i].ProdusId, Convert.ToInt32(boxes[i].Text));
                 CumparareItemController.AddCumparareItem(cumparareItem);
             }
-
             MessageBox.Show("Comanda a fost trimisa cu succes");
         }
 
