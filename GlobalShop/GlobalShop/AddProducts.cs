@@ -35,7 +35,8 @@ namespace GlobalShop
             string caracteristici = textBox1.Text;
             int optiune = checkedListBox1.SelectedIndex + 1;
             int optiune1 = checkedListBox2.SelectedIndex + 1;
-            byte[] imagine = imageToByteArray(pictureBox1.Image);
+            // byte[] imagine = imageToByteArray(pictureBox1.Image);
+            string imagine = Path.GetDirectoryName(pictureBox1.ImageLocation);
             try
             {
 

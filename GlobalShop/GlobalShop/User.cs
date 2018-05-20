@@ -15,6 +15,15 @@ namespace GlobalShop
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public User(string Nume, string Email, string Telefon, string Adresa, string Parola, string Nickname)
+        {
+            this.NumePrenume = Nume;
+            this.Email = Email;
+            this.Telefon = Telefon;
+            this.Adresa = Adresa;
+            this.Parola = Parola;
+            this.Nickname = Nickname;
+        }
         public User()
         {
             this.Admins = new HashSet<Admin>();

@@ -337,6 +337,7 @@ namespace GlobalShop
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label13);
@@ -351,7 +352,6 @@ namespace GlobalShop
             this.panel2.Controls.Add(this.button16);
             this.panel2.Controls.Add(this.button17);
             this.panel2.Controls.Add(this.button18);
-            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox8);
@@ -577,7 +577,7 @@ namespace GlobalShop
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(795, 341);
+            this.pictureBox5.Location = new System.Drawing.Point(98, 341);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(151, 155);
             this.pictureBox5.TabIndex = 20;
@@ -585,7 +585,7 @@ namespace GlobalShop
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(565, 341);
+            this.pictureBox6.Location = new System.Drawing.Point(329, 341);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(151, 155);
             this.pictureBox6.TabIndex = 19;
@@ -593,7 +593,7 @@ namespace GlobalShop
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(330, 341);
+            this.pictureBox7.Location = new System.Drawing.Point(565, 340);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(151, 155);
             this.pictureBox7.TabIndex = 18;
@@ -601,7 +601,7 @@ namespace GlobalShop
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(97, 341);
+            this.pictureBox8.Location = new System.Drawing.Point(795, 340);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(151, 155);
             this.pictureBox8.TabIndex = 17;

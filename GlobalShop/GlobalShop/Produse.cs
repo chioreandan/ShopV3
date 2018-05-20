@@ -15,6 +15,16 @@ namespace GlobalShop
     public partial class Produse
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Produse(string Nume, decimal Pret, int Stoc, string Caracteristici, string Imagine, int CategorieId, int BrandId)
+        {
+            this.NumeProdus = Nume;
+            this.Pret = Pret;
+            this.Stoc = Stoc;
+            this.Caracteristici = Caracteristici;
+            this.Imagine = Imagine;
+            this.CategorieId = CategorieId;
+            this.BrandId = BrandId;
+        }
         public Produse()
         {
             this.CumparareItems = new HashSet<CumparareItem>();
