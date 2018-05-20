@@ -52,6 +52,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.sub6 = new System.Windows.Forms.Label();
+            this.c6 = new System.Windows.Forms.Label();
+            this.sub5 = new System.Windows.Forms.Label();
+            this.c5 = new System.Windows.Forms.Label();
+            this.sub4 = new System.Windows.Forms.Label();
+            this.c4 = new System.Windows.Forms.Label();
             this.sub3 = new System.Windows.Forms.Label();
             this.c3 = new System.Windows.Forms.Label();
             this.sub2 = new System.Windows.Forms.Label();
@@ -59,12 +65,6 @@
             this.sub1 = new System.Windows.Forms.Label();
             this.c1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.sub6 = new System.Windows.Forms.Label();
-            this.c6 = new System.Windows.Forms.Label();
-            this.sub5 = new System.Windows.Forms.Label();
-            this.c5 = new System.Windows.Forms.Label();
-            this.sub4 = new System.Windows.Forms.Label();
-            this.c4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -360,6 +360,69 @@
             this.panel4.Size = new System.Drawing.Size(447, 267);
             this.panel4.TabIndex = 7;
             // 
+            // sub6
+            // 
+            this.sub6.AutoSize = true;
+            this.sub6.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sub6.Location = new System.Drawing.Point(12, 369);
+            this.sub6.Name = "sub6";
+            this.sub6.Size = new System.Drawing.Size(120, 16);
+            this.sub6.TabIndex = 12;
+            this.sub6.Text = "Subtotal: 300 Lei";
+            // 
+            // c6
+            // 
+            this.c6.AutoSize = true;
+            this.c6.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.c6.Location = new System.Drawing.Point(12, 350);
+            this.c6.Name = "c6";
+            this.c6.Size = new System.Drawing.Size(123, 16);
+            this.c6.TabIndex = 11;
+            this.c6.Text = "Comanda nr. 2222";
+            // 
+            // sub5
+            // 
+            this.sub5.AutoSize = true;
+            this.sub5.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sub5.Location = new System.Drawing.Point(11, 306);
+            this.sub5.Name = "sub5";
+            this.sub5.Size = new System.Drawing.Size(120, 16);
+            this.sub5.TabIndex = 10;
+            this.sub5.Text = "Subtotal: 300 Lei";
+            // 
+            // c5
+            // 
+            this.c5.AutoSize = true;
+            this.c5.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.c5.Location = new System.Drawing.Point(11, 287);
+            this.c5.Name = "c5";
+            this.c5.Size = new System.Drawing.Size(123, 16);
+            this.c5.TabIndex = 9;
+            this.c5.Text = "Comanda nr. 2222";
+            // 
+            // sub4
+            // 
+            this.sub4.AutoSize = true;
+            this.sub4.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sub4.Location = new System.Drawing.Point(11, 254);
+            this.sub4.Name = "sub4";
+            this.sub4.Size = new System.Drawing.Size(120, 16);
+            this.sub4.TabIndex = 8;
+            this.sub4.Text = "Subtotal: 300 Lei";
+            // 
+            // c4
+            // 
+            this.c4.AutoSize = true;
+            this.c4.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.c4.Location = new System.Drawing.Point(11, 235);
+            this.c4.Name = "c4";
+            this.c4.Size = new System.Drawing.Size(123, 16);
+            this.c4.TabIndex = 7;
+            this.c4.Text = "Comanda nr. 2222";
+            // 
             // sub3
             // 
             this.sub3.AutoSize = true;
@@ -433,69 +496,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Comenzile mele";
             // 
-            // sub6
-            // 
-            this.sub6.AutoSize = true;
-            this.sub6.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub6.Location = new System.Drawing.Point(12, 369);
-            this.sub6.Name = "sub6";
-            this.sub6.Size = new System.Drawing.Size(120, 16);
-            this.sub6.TabIndex = 12;
-            this.sub6.Text = "Subtotal: 300 Lei";
-            // 
-            // c6
-            // 
-            this.c6.AutoSize = true;
-            this.c6.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.c6.Location = new System.Drawing.Point(12, 350);
-            this.c6.Name = "c6";
-            this.c6.Size = new System.Drawing.Size(123, 16);
-            this.c6.TabIndex = 11;
-            this.c6.Text = "Comanda nr. 2222";
-            // 
-            // sub5
-            // 
-            this.sub5.AutoSize = true;
-            this.sub5.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub5.Location = new System.Drawing.Point(11, 306);
-            this.sub5.Name = "sub5";
-            this.sub5.Size = new System.Drawing.Size(120, 16);
-            this.sub5.TabIndex = 10;
-            this.sub5.Text = "Subtotal: 300 Lei";
-            // 
-            // c5
-            // 
-            this.c5.AutoSize = true;
-            this.c5.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.c5.Location = new System.Drawing.Point(11, 287);
-            this.c5.Name = "c5";
-            this.c5.Size = new System.Drawing.Size(123, 16);
-            this.c5.TabIndex = 9;
-            this.c5.Text = "Comanda nr. 2222";
-            // 
-            // sub4
-            // 
-            this.sub4.AutoSize = true;
-            this.sub4.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub4.Location = new System.Drawing.Point(11, 254);
-            this.sub4.Name = "sub4";
-            this.sub4.Size = new System.Drawing.Size(120, 16);
-            this.sub4.TabIndex = 8;
-            this.sub4.Text = "Subtotal: 300 Lei";
-            // 
-            // c4
-            // 
-            this.c4.AutoSize = true;
-            this.c4.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.c4.Location = new System.Drawing.Point(11, 235);
-            this.c4.Name = "c4";
-            this.c4.Size = new System.Drawing.Size(123, 16);
-            this.c4.TabIndex = 7;
-            this.c4.Text = "Comanda nr. 2222";
-            // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 11F);
@@ -509,7 +509,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "UserProfile";
             this.Padding = new System.Windows.Forms.Padding(17, 60, 17, 17);
-            this.Text = "UserProfile";
+            this.Text = "c";
             this.Load += new System.EventHandler(this.UserProfile_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

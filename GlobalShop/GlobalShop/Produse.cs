@@ -11,7 +11,7 @@ namespace GlobalShop
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Produse
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -35,13 +35,11 @@ namespace GlobalShop
             this.CategorieId = CategorieId;
             this.BrandId = BrandId;
             this.VanzatorId = VanzatorId;
-
         }
         public Produse()
         {
             this.CumparareItems = new HashSet<CumparareItem>();
         }
-    
         public int ProdusId { get; set; }
         public Nullable<int> VanzatorId { get; set; }
         public Nullable<int> BrandId { get; set; }
@@ -51,7 +49,6 @@ namespace GlobalShop
         public int Stoc { get; set; }
         public string Caracteristici { get; set; }
         public string Imagine { get; set; }
-    
         public virtual Branduri Branduri { get; set; }
         public virtual CategoriiProduse CategoriiProduse { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -11,7 +11,7 @@ namespace GlobalShop
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class CategoriiProduse
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +19,10 @@ namespace GlobalShop
         {
             this.Produses = new HashSet<Produse>();
         }
-    
+
         public int CategorieId { get; set; }
         public string NumeCategorie { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Produse> Produses { get; set; }
     }

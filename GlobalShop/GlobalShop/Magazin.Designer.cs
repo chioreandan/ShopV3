@@ -51,6 +51,7 @@ namespace GlobalShop
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@ namespace GlobalShop
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -419,6 +419,14 @@ namespace GlobalShop
             this.label16.TabIndex = 43;
             this.label16.Text = "label13";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(98, 341);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -574,14 +582,6 @@ namespace GlobalShop
             this.button18.Text = "Vezi detalii";
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(98, 341);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -763,6 +763,7 @@ namespace GlobalShop
             this.metroButton1.Size = new System.Drawing.Size(55, 41);
             this.metroButton1.TabIndex = 2;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // label1
             // 

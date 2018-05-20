@@ -11,14 +11,13 @@ namespace GlobalShop
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class CumparareItem
     {
         public CumparareItem()
         {
-
         }
-        public CumparareItem(int CumparareId,int ProdusId, int NumarIteme)
+        public CumparareItem(int CumparareId, int ProdusId, int NumarIteme)
         {
             this.CumparareId = CumparareId;
             this.ProdusId = ProdusId;
@@ -27,7 +26,7 @@ namespace GlobalShop
         public int CumparareId { get; set; }
         public int ProdusId { get; set; }
         public Nullable<int> NumarIteme { get; set; }
-    
+
         public virtual Cumparare Cumparare { get; set; }
         public virtual Produse Produse { get; set; }
     }

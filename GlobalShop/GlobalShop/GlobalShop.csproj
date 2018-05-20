@@ -94,7 +94,6 @@
     <Compile Include="Controllers\Products\CautareProduse.cs" />
     <Compile Include="Controllers\Products\CheckStoc.cs" />
     <Compile Include="Controllers\Products\ButtonController.cs" />
-    <Compile Include="Controllers\Products\CosController.cs" />
     <Compile Include="Controllers\Products\DeleteCosController.cs" />
     <Compile Include="Controllers\Products\ProduseController.cs" />
     <Compile Include="Controllers\Products\RandomProducts.cs" />

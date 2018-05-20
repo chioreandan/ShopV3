@@ -11,7 +11,6 @@ namespace GlobalShop
 {
     using System;
     using System.Collections.Generic;
-    
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -30,7 +29,6 @@ namespace GlobalShop
             this.Cumparares = new HashSet<Cumparare>();
             this.Vanzatoris = new HashSet<Vanzatori>();
         }
-    
         public int UserId { get; set; }
         public string NumePrenume { get; set; }
         public string Email { get; set; }
@@ -38,7 +36,6 @@ namespace GlobalShop
         public string Adresa { get; set; }
         public string Parola { get; set; }
         public string Nickname { get; set; }
-    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Admin> Admins { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

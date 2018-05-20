@@ -82,7 +82,7 @@ namespace GlobalShop
                         smallLabels[i].Text += "\n";
                     }
                 }
-                bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
+                bigLabels[i].Text = produses[i].Pret.ToString() + ".00 Lei";
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -112,7 +112,7 @@ namespace GlobalShop
                         smallLabels[i].Text += "\n";
                     }
                 }
-                bigLabels[i].Text = produses[i].Pret.ToString() + " Lei";
+                bigLabels[i].Text = produses[i].Pret.ToString() + ".00 Lei";
                 if (i == 0)
                 {
                    
@@ -259,6 +259,43 @@ namespace GlobalShop
             int item = DeleteCosController.returnCategorie(clickedButton2.Name);
             cos.RemoveAt(item);
             button21_Click(sender, e);
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            string numeProdus = comboBox2.Text;
+            Console.WriteLine(numeProdus);
+            Button clickedButton = sender as Button;
+            if (clickedButton == null)
+                return;
+           
+            produs = new Produse();
+
+            produs = ProduseController.GetProduseByName(numeProdus);
+            panel5.Visible = false;
+            panel4.Visible = true;
+            panel2.Visible = false;
+            DateTime tomorrow = DateTime.Now.AddDays(1);
+            label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
+
+
+            pictureBox9.Image = Image.FromFile(@produs.Imagine);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            label24.Text = produs.NumeProdus;
+            pret.Text = produs.Pret.ToString() + " Lei";
+
+            if (CheckStoc.Check(produs) == true)
+            {
+                label12.Text = "In Stoc";
+                label12.BackColor = Color.Green;
+            }
+            else if (CheckStoc.Check(produs) == false)
+            {
+                label12.Text = "Stoc epuizat";
+                label12.BackColor = Color.Red;
+
+            }
+            label21.Text = produs.Caracteristici;
         }
     }
 }
