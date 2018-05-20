@@ -109,6 +109,13 @@
             this.ProductNameTextBox = new System.Windows.Forms.TextBox();
             this.stoc = new System.Windows.Forms.TextBox();
             this.pretTExtBox = new System.Windows.Forms.TextBox();
+            this.VizualizareComenzi = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label17 = new System.Windows.Forms.Label();
             this.dateFirma.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -123,6 +130,8 @@
             this.panel2.SuspendLayout();
             this.addProductLabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.VizualizareComenzi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // emailCompanie
@@ -400,6 +409,7 @@
             // 
             // myProductsPanel
             // 
+            this.myProductsPanel.Controls.Add(this.VizualizareComenzi);
             this.myProductsPanel.Controls.Add(this.button8);
             this.myProductsPanel.Controls.Add(this.button7);
             this.myProductsPanel.Controls.Add(this.button6);
@@ -750,6 +760,7 @@
             this.Laptopbutton.TabIndex = 1;
             this.Laptopbutton.Text = "Laptopuri";
             this.Laptopbutton.UseVisualStyleBackColor = false;
+            this.Laptopbutton.Click += new System.EventHandler(this.Laptopbutton_Click);
             // 
             // label4
             // 
@@ -1078,6 +1089,58 @@
             this.pretTExtBox.Size = new System.Drawing.Size(148, 29);
             this.pretTExtBox.TabIndex = 24;
             // 
+            // VizualizareComenzi
+            // 
+            this.VizualizareComenzi.Controls.Add(this.dataGridView1);
+            this.VizualizareComenzi.Controls.Add(this.label17);
+            this.VizualizareComenzi.Location = new System.Drawing.Point(144, 119);
+            this.VizualizareComenzi.Name = "VizualizareComenzi";
+            this.VizualizareComenzi.Size = new System.Drawing.Size(609, 479);
+            this.VizualizareComenzi.TabIndex = 20;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridView1.Location = new System.Drawing.Point(71, 98);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(434, 273);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nume User";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Numar Comanda";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Produse";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Total";
+            this.Column4.Name = "Column4";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(57, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(102, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Vizualizare comenzi:";
+            // 
             // ProductsManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,10 +1150,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.sellerName);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.myProductsPanel);
             this.Controls.Add(this.addProductLabel);
             this.Controls.Add(this.dateFirma);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.myProductsPanel);
             this.Name = "ProductsManager";
             this.Text = "ProductsManager";
             this.Load += new System.EventHandler(this.ProductsManager_Load);
@@ -1113,6 +1176,9 @@
             this.addProductLabel.ResumeLayout(false);
             this.addProductLabel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.VizualizareComenzi.ResumeLayout(false);
+            this.VizualizareComenzi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1201,5 +1267,12 @@
         private System.Windows.Forms.TextBox ProductNameTextBox;
         private System.Windows.Forms.TextBox stoc;
         private System.Windows.Forms.TextBox pretTExtBox;
+        private System.Windows.Forms.Panel VizualizareComenzi;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Label label17;
     }
 }
