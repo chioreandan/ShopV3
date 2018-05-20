@@ -9,15 +9,9 @@ namespace GlobalShop.Controllers.Products
     public class ProduseController
     {
         private static ShopEntities shop = new ShopEntities();
-
-
         public static IEnumerable<Produse> GetProduse() => shop.Produses.ToList();
-
-        public static Produse GetProdus(int CategorieId) 
-        {
-            return null;
-        }
-
+        public static Produse GetProduseByName(string name) => shop.Produses.FirstOrDefault(u => u.NumeProdus == name);
+        public static Produse GetProdus(int CategorieId) => null;
         public static void CreateProdus(Produse produs)
         {
             shop.Produses.Add(produs);

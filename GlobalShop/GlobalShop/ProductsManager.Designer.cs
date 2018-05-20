@@ -150,6 +150,7 @@
             this.dateFirma.Controls.Add(this.label16);
             this.dateFirma.Controls.Add(this.emailActiv);
             this.dateFirma.Controls.Add(this.label15);
+            this.dateFirma.Controls.Add(this.myProductsPanel);
             this.dateFirma.Controls.Add(this.button9);
             this.dateFirma.Controls.Add(this.cui);
             this.dateFirma.Controls.Add(this.cont);
@@ -409,7 +410,6 @@
             // 
             // myProductsPanel
             // 
-            this.myProductsPanel.Controls.Add(this.VizualizareComenzi);
             this.myProductsPanel.Controls.Add(this.button8);
             this.myProductsPanel.Controls.Add(this.button7);
             this.myProductsPanel.Controls.Add(this.button6);
@@ -429,11 +429,12 @@
             this.myProductsPanel.Controls.Add(this.pictureBox3);
             this.myProductsPanel.Controls.Add(this.pictureBox2);
             this.myProductsPanel.Controls.Add(this.panel1);
+            this.myProductsPanel.Controls.Add(this.VizualizareComenzi);
             this.myProductsPanel.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.myProductsPanel.Location = new System.Drawing.Point(302, 12);
+            this.myProductsPanel.Location = new System.Drawing.Point(3, 43);
             this.myProductsPanel.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.myProductsPanel.Name = "myProductsPanel";
-            this.myProductsPanel.Size = new System.Drawing.Size(896, 716);
+            this.myProductsPanel.Size = new System.Drawing.Size(884, 673);
             this.myProductsPanel.TabIndex = 40;
             // 
             // button8
@@ -1093,9 +1094,9 @@
             // 
             this.VizualizareComenzi.Controls.Add(this.dataGridView1);
             this.VizualizareComenzi.Controls.Add(this.label17);
-            this.VizualizareComenzi.Location = new System.Drawing.Point(144, 119);
+            this.VizualizareComenzi.Location = new System.Drawing.Point(144, 113);
             this.VizualizareComenzi.Name = "VizualizareComenzi";
-            this.VizualizareComenzi.Size = new System.Drawing.Size(609, 479);
+            this.VizualizareComenzi.Size = new System.Drawing.Size(609, 485);
             this.VizualizareComenzi.TabIndex = 20;
             // 
             // dataGridView1
@@ -1150,10 +1151,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.sellerName);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.myProductsPanel);
-            this.Controls.Add(this.addProductLabel);
             this.Controls.Add(this.dateFirma);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.addProductLabel);
             this.Name = "ProductsManager";
             this.Text = "ProductsManager";
             this.Load += new System.EventHandler(this.ProductsManager_Load);
