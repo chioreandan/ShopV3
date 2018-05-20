@@ -40,8 +40,10 @@ namespace GlobalShop
                 }
                 else if (LoginController.CheckVanzator(user.UserId) == true && LoginController.CheckAdmin(user.UserId)==false)
                 {
-                    AddProducts addProducts = new AddProducts();
-                    addProducts.Show();
+                    //AddProducts addProducts = new AddProducts();
+                    //addProducts.Show();
+                    ProductsManager productsManager = new ProductsManager();
+                    productsManager.Show();
                 }
                 this.Close();
             }

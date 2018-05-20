@@ -11,9 +11,9 @@ namespace GlobalShop.Controllers.Seller
     {
         private static ShopEntities shop = new ShopEntities();
 
-        public static void AddProduct(string Nume, decimal Pret, int Stoc, string Caracteristici, string Imagine, int CategorieId, int BrandId)
+        public static void AddProduct(string Nume, decimal Pret, int Stoc, string Caracteristici, string Imagine, int CategorieId, int BrandId,int VanzatorID)
         {
-            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine, CategorieId, BrandId);
+            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine, CategorieId, BrandId, VanzatorID);
             // try
             //{
             AddProductController.CreateProduct(produs);

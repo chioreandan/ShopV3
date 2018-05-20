@@ -271,6 +271,7 @@
             this.Controls.Add(this.AddProduct);
             this.Name = "AddProducts";
             this.Text = "AddProducts";
+            this.Load += new System.EventHandler(this.AddProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

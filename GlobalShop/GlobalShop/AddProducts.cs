@@ -40,7 +40,7 @@ namespace GlobalShop
             try
             {
 
-                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, optiune, optiune1);
+                //AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, optiune, optiune1);
 
             }
             catch
@@ -66,6 +66,11 @@ namespace GlobalShop
                 pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
             
             
+        }
+
+        private void AddProducts_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

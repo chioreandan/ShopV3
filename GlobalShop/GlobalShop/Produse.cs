@@ -25,6 +25,18 @@ namespace GlobalShop
             this.CategorieId = CategorieId;
             this.BrandId = BrandId;
         }
+        public Produse(string Nume, decimal PretProdus, int Stoc, string Caracteristici, string imagine, int CategorieId, int BrandId, int VanzatoId)
+        {
+            this.NumeProdus = Nume;
+            this.Pret = PretProdus;
+            this.Stoc = Stoc;
+            this.Caracteristici = Caracteristici;
+            this.Imagine = imagine;
+            this.CategorieId = CategorieId;
+            this.BrandId = BrandId;
+            this.VanzatorId = VanzatorId;
+
+        }
         public Produse()
         {
             this.CumparareItems = new HashSet<CumparareItem>();

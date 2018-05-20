@@ -14,7 +14,7 @@ namespace GlobalShop
 {
     public partial class Form1 : MetroForm
     {
-        string emailAdress;
+        public static string emailAdress;
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +22,7 @@ namespace GlobalShop
             Magazin magazin = new Magazin();
             magazin.Show();
         }
+        
 
         private void continua_Click(object sender, EventArgs e)
         {
@@ -56,6 +57,11 @@ namespace GlobalShop
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
